@@ -1,3 +1,4 @@
+# Base image
 FROM python:alpine
 
 WORKDIR /app/backend
@@ -15,4 +16,3 @@ EXPOSE 8080
 ENTRYPOINT [ "uvicorn" ]
 
 CMD [ "main:app", "--host=0.0.0.0", "--port=8080" ]
-
